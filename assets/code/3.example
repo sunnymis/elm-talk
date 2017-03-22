@@ -1,0 +1,7 @@
+person = {
+  name = "sunny",
+  age = 23,
+  employed = False  
+}
+
+{ person | name = "Sunny Mistry", employed = False }

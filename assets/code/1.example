@@ -1,0 +1,13 @@
+
+add x y =
+  x + y
+
+double list =
+  List.map (\n -> n * 2) list
+
+pureFunction input =
+  let
+    a = 5
+  in
+    a * input + 2
+

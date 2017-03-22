@@ -1,0 +1,37 @@
+
+document.getElementById("btn").addEventListener("click", function() {
+  alert("clicked");
+});
+
+let higherOrder = function() {
+  console.log('setting variable equal to function')
+}
+higherOrder(); 
+
+function greaterThan(n) {
+  return function(m) { return m > n; };
+}
+let greaterThan10 = greaterThan(10);
+console.log(greaterThan10(11));
+
+
+doubleFn n =
+  n * 2
+
+doubleList list =
+  List.map doubleFn list
+
+add : number -> number -> number
+add x y =
+  x + y
+
+/*
+  partiallyAppliedFn = add 10
+
+  partiallyAppliedFn y =
+    10 + y
+
+  partiallyAppliedFn 5
+
+  Outputs: 15
+ */

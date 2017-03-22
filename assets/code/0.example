@@ -1,0 +1,41 @@
+
+function add (x, y) {
+  return x + y; 
+}
+
+function double (numbers) {
+  return numbers.map((number) => {
+    return number * 2;
+  });
+}
+
+function pureFunction (input) {
+  let a = 1;
+  a = a * input + 2;
+  return a;
+}
+
+var count = 0;
+function incrementCount (val) {
+    count += val;
+}
+
+function getNumber() {
+  return Math.random(); 
+}
+
+function getData() {
+  $.ajax({
+     url: 'http://some.api.endpoint',
+     data: {
+        format: 'json'
+     },
+     type: 'GET',
+     error: function() {
+        alert('error');
+     },
+     success: function(data) {
+      console.log(data);
+     },
+  });
+}
